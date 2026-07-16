@@ -30,14 +30,10 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <div className="bg-slate-800 rounded-lg shadow-2xl p-6 border border-slate-700">
+        <div className="bg-slate-800 rounded-lg shadow-2xl p-8 border border-slate-700">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-white mb-2">
-              📊 Percentage Calculator
-            </h1>
-            <p className="text-slate-400 text-sm">
-              Calculate percentages, increases, and more instantly
-            </p>
+            <h1 className="text-3xl font-bold text-white mb-2">📊 Percentage Calculator</h1>
+            <p className="text-slate-400 text-sm">Calculate percentages, increases, and more instantly</p>
           </div>
 
           <div className="flex gap-2 mb-6">
@@ -66,28 +62,24 @@ export default function App() {
           {tab === 'findPercentage' && (
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Number
-                </label>
+                <label className="block text-sm font-medium text-slate-300 mb-2">Number</label>
                 <input
                   type="number"
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
                   placeholder="Enter number"
-                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Percentage (%)
-                </label>
+                <label className="block text-sm font-medium text-slate-300 mb-2">Percentage (%)</label>
                 <input
                   type="number"
                   value={percentage}
                   onChange={(e) => setPercentage(e.target.value)}
                   placeholder="Enter percentage"
-                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
                 />
               </div>
 
@@ -99,7 +91,7 @@ export default function App() {
               </button>
 
               {result !== null && (
-                <div className="bg-slate-700 p-4 rounded border border-slate-600">
+                <div className="bg-blue-900 bg-opacity-30 p-4 rounded border border-blue-600">
                   <p className="text-slate-300 text-sm mb-1">Result</p>
                   <p className="text-2xl font-bold text-blue-400">{result}</p>
                 </div>
@@ -110,28 +102,24 @@ export default function App() {
           {tab === 'increase' && (
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Original Number
-                </label>
+                <label className="block text-sm font-medium text-slate-300 mb-2">Original Number</label>
                 <input
                   type="number"
                   value={originalNumber}
                   onChange={(e) => setOriginalNumber(e.target.value)}
                   placeholder="Enter original number"
-                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  % Increase
-                </label>
+                <label className="block text-sm font-medium text-slate-300 mb-2">% Increase</label>
                 <input
                   type="number"
                   value={percentageIncrease}
                   onChange={(e) => setPercentageIncrease(e.target.value)}
                   placeholder="Enter percentage increase"
-                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
                 />
               </div>
 
@@ -143,7 +131,7 @@ export default function App() {
               </button>
 
               {increaseResult && (
-                <div className="bg-slate-700 p-4 rounded border border-slate-600 space-y-2">
+                <div className="bg-blue-900 bg-opacity-30 p-4 rounded border border-blue-600 space-y-2">
                   <div>
                     <p className="text-slate-300 text-sm">Increase Amount</p>
                     <p className="text-xl font-bold text-blue-400">{increaseResult.increase}</p>
