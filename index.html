@@ -238,6 +238,94 @@ function calc3() {
   }
 })();
 </script>
+
+<section id="seo-content">
+  <style>
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#334155;line-height:1.7}
+    #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
+    #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
+    #seo-content p,#seo-content li{font-size:.95rem}
+    #seo-content ul{padding-left:1.4rem;margin:.5rem 0}
+    #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+    @media(prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+  </style>
+  <h2>How to Use the Percentage Calculator</h2>
+  <p>The Percentage Calculator handles all the most common percentage problems in one place. Whether you need to find what percentage one number is of another, calculate a percentage of a value, work out the original number before a percentage increase or decrease was applied, or find the percentage change between two figures, this tool covers every scenario. Just select the type of calculation you need, enter your numbers, and the answer appears instantly alongside a step-by-step explanation so you can see exactly how the result was reached.</p>
+  <p>Percentages appear constantly in everyday life — discounts, tax rates, tips, exam scores, pay rises, investment returns, nutritional information, and statistical reporting all use them. Despite being familiar, percentage calculations are a frequent source of confusion because there are several distinct question types that look similar but use different formulas. "What is 20% of 80?" (answer: 16) uses the formula part = percent × whole ÷ 100. "What percentage of 80 is 16?" reverses it: percent = part ÷ whole × 100. "80 increased by 20% equals what?" uses whole × (1 + percent/100) = 96. And "what was the original value if 96 is 20% more than it?" works backwards: original = new value ÷ (1 + percent/100) = 80. The calculator correctly identifies and applies each formula based on the question type you select.</p>
+  <p>One subtlety worth knowing is that percentage increases and decreases are not symmetrical. If a price rises by 50% and then falls by 50%, you do not end up back where you started — the fall is applied to the larger post-rise value. A £100 item that rises 50% to £150 and then falls 50% becomes £75, not £100. This asymmetry matters when comparing investment returns, price movements, or any scenario involving successive percentage changes. The percentage change calculator shows you the direction and magnitude of a single change; for compounding successive changes, multiply the multipliers together rather than adding the percentages.</p>
+
+  <h2>Common Percentage Calculations</h2>
+  <ul>
+    <li><strong>X% of Y:</strong> e.g. "What is 15% of £240?" → £240 × 0.15 = £36 (tip, tax, or discount amount)</li>
+    <li><strong>X is what % of Y:</strong> e.g. "60 is what % of 240?" → 60/240 × 100 = 25%</li>
+    <li><strong>Percentage increase/decrease:</strong> e.g. "Price went from £80 to £100" → (100−80)/80 × 100 = +25%</li>
+    <li><strong>Original value before % change:</strong> e.g. "£120 is after a 20% increase — what was the original?" → 120 ÷ 1.20 = £100</li>
+    <li><strong>VAT/GST inclusive price:</strong> e.g. "£120 including 20% VAT — what is the pre-tax price?" → 120 ÷ 1.20 = £100</li>
+  </ul>
+
+  <div class="example"><strong>Exam score example:</strong> You scored 67 out of 80 marks. Percentage = 67 ÷ 80 × 100 = <strong>83.75%</strong>.</div>
+  <div class="example"><strong>Discount example:</strong> A jacket costs £175, reduced by 30%. Discount = £175 × 0.30 = £52.50. Sale price = <strong>£122.50</strong>.</div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>How do I calculate a percentage of a number?</h3>
+  <p>Multiply the number by the percentage and divide by 100. For example, 20% of 350 = 350 × 20 ÷ 100 = 70. Equivalently, convert the percentage to a decimal (20% = 0.20) and multiply: 350 × 0.20 = 70.</p>
+  <h3>How do I find what percentage one number is of another?</h3>
+  <p>Divide the part by the whole and multiply by 100. For example, to find what percentage 45 is of 180: 45 ÷ 180 × 100 = 25%. Always make sure you divide the part by the correct total (the whole), not the other way round.</p>
+  <h3>How do I calculate a percentage increase?</h3>
+  <p>Subtract the original value from the new value, divide by the original value, and multiply by 100. Formula: ((New − Old) ÷ Old) × 100. A positive result is an increase; negative is a decrease.</p>
+  <h3>What is the difference between percentage points and percent?</h3>
+  <p>Percentage points measure the arithmetic difference between two percentages. If interest rates rise from 2% to 5%, that is 3 percentage points — but expressed as a percentage change it is (5−2)/2 × 100 = 150%. Confusing the two is a common source of misinterpretation in financial and statistical reporting.</p>
+  <h3>Why doesn't a 50% increase followed by a 50% decrease get me back to the start?</h3>
+  <p>Because the second percentage is applied to the new (larger) value. If £100 rises 50% to £150 and then falls 50%, the fall is 50% of £150 = £75, leaving £75, not £100. Successive percentage changes compound multiplicatively, not additively.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I calculate a percentage of a number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply the number by the percentage and divide by 100. For example, 20% of 350 = 350 × 20 ÷ 100 = 70. Or convert to decimal: 350 × 0.20 = 70."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find what percentage one number is of another?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the part by the whole and multiply by 100. For example, 45 is what percent of 180? = 45 ÷ 180 × 100 = 25%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate a percentage increase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Formula: ((New − Old) ÷ Old) × 100. A positive result is an increase; negative is a decrease."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between percentage points and percent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Percentage points measure the arithmetic difference between two percentages. If rates go from 2% to 5%, that is 3 percentage points — but a 150% increase in the rate itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't a 50% increase followed by a 50% decrease return to the original?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because each percentage is applied to the current value, not the original. £100 rising 50% becomes £150; falling 50% from £150 gives £75, not £100. Successive changes compound multiplicatively."
+      }
+    }
+  ]
+}
+</script>
 <footer style="background:#1a1a2e;margin-top:48px;padding:28px 24px;text-align:center;font-family:'Segoe UI',system-ui,Arial,sans-serif;font-size:13px;color:#94a3b8;line-height:1.8">
 <div style="font-weight:700;color:#fff;font-size:15px">⚡ Tabutility</div>
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
